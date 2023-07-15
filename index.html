@@ -1,0 +1,134 @@
+
+<!-- saved from url=(0030)https://animatediff.github.io/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>AnimateDiff</title>
+<link href="./AnimateDiff_files/style.css" rel="stylesheet">
+<script type="text/javascript" src="./AnimateDiff_files/jquery.mlens-1.0.min.js.下载"></script> 
+<script type="text/javascript" src="./AnimateDiff_files/jquery.js.下载"></script>
+
+
+<style>
+  p.serif{
+    font-family:"Times New Roman", Times, serif;
+  }
+  p.sansserif{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style>
+  
+</head>
+
+<body>
+<div class="content">
+  <h1><strong>Title</strong></h1>
+  <p id="authors" class="serif">
+    <a href="mailto:guoyuwei@pjlab.org.cn">authors<sup>1</sup></a>
+
+    <br>
+    <a style="font-size: 0.7em"><sup>*</sup>Corresponding Author.</a>
+    <br>
+    <span style="font-size: 0.8em; margin-top: 0.5em">
+      <a href="http://rlab.sia.cas.cn/"><sup>1</sup>SIA State Key Laboratory of Robotics</a>
+
+    </span>
+  </p>
+
+  <font size="+1">
+    <p style="text-align: center;" class="serif">
+      <a href="https://arxiv.org/abs/2307.04725" target="_blank" style="font-weight: bold;">[Paper]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://github.com/guoyww/animatediff/" target="_blank" style="font-weight: bold;">[Github]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    </p><br>
+  </font>
+
+  <font size="+1">
+    <p class="serif" style="color: red; font-weight: bold">Click to Play demo!</p>
+  </font>
+
+  <div class="row">
+    <div class="col">
+      <video class="clickplay" width="100%" __idm_id__="1318918">
+        <source src="animations/teaser/ani_01.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="col">
+      <video class="clickplay" width="100%" __idm_id__="1318917">
+        <source src="animations/teaser/ani_02.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="col">
+      <video class="clickplay" width="100%" __idm_id__="1318913">
+        <source src="animations/teaser/ani_03.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <video class="clickplay" width="100%" __idm_id__="1318919">
+        <source src="animations/teaser/ani_04.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="col">
+      <video class="clickplay" width="100%" __idm_id__="1318915">
+        <source src="animations/teaser/ani_05.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="col">
+      <video class="clickplay" width="100%" __idm_id__="1318914">
+        <source src="animations/teaser/ani_06.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="content">
+  <p style="text-align:left; font-size: 2em; font-weight: bold" class="serif">Methodology</p>
+  <p style="font-size: 1.2em" class="serif">
+    ..........
+  </p>
+  <img class="summary-img" src="./AnimateDiff_files/framework.jpg" style="width:100%;"> <br>
+</div>
+
+
+
+
+
+<div class="content" id="bibtex">
+  <p style="text-align:left; font-size: 2em; font-weight: bold" class="serif">BibTeX</p>
+  <!-- <span class="serif" style="color:red;"> (Coming Soon)</span> -->
+  <code> @misc{guo2023animatediff,<br>
+  &nbsp;&nbsp;title={AnimateDiff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning},<br>
+  &nbsp;&nbsp;author={Yuwei Guo, Ceyuan Yang, Anyi Rao, Yaohui Wang, Yu Qiao, Dahua Lin, Bo Dai},<br>
+  &nbsp;&nbsp;booktitle={arXiv preprint arxiv:2307.04725},<br>
+  &nbsp;&nbsp;year={2023},<br>
+  &nbsp;&nbsp;archivePrefix={arXiv},<br>
+  &nbsp;&nbsp;primaryClass={cs.CV}<br>
+  } </code> 
+</div>
+
+<div class="content">
+  <p class="serif">
+    Project page template is borrowed from <a href="https://dreambooth.github.io/">DreamBooth</a>.
+  </p>
+</div>
+
+
+
+<script>
+var videos = document.getElementsByClassName("clickplay");
+for (var i = 0; i < videos.length; i++) {
+  videos[i].addEventListener("click", function() {
+    this.play();
+  });
+  videos[i].addEventListener("ended", function() {
+    this.pause();
+    this.currentTime = 0;
+  });
+}
+</script>
+
+
+</body></html>
