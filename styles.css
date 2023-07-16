@@ -1,0 +1,17 @@
+/* styles.css */
+
+body {
+    font-family: Arial; 
+    text-align: center;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  section {
+    margin: 20px;
+  }
+  
+  /* 其他样式 */
